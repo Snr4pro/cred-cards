@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="mobile.css">-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Plus+Jakarta+Sans:wght@300&family=Space+Grotesk&display=swap"
+        rel="stylesheet">
+    <title>Desktop</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-violet">
+            <img src="images/bg-main-mobile.png" width="768px" alt="background">
+        </div>
+        <div class="top-violet-mob">
+            <img src="images/bg-main-mobile.png" width="375px" alt="background">
+        </div>
+        <div class="violet">
+        </div>
+            <div class="front-card">
+                <img src="images/card-logo.svg" id="logo" alt="logo">
+                <div class="credit">
+                    <span id="replacenum">0000 0000 0000 0000</span>
+                </div>
+                <div class="holder">
+                    <span id="replacename">JANE APPLESEED</span>
+                </div>
+                <div class="carddate">
+                    <span id="mon">00/</span><span id="yea">00</span>
+            </div>
+            <div class="back">
+            <span id="cvnumber">000</span>
+            </div>
+            </div>
+        <div class="white">
+            <form>
+                <label for="cc-name">CARDHOLDER NAME</label>
+                <input type="text" placeholder="e.g. Jane Appleseed" id="inname" oninput="cName()">
+
+                <label for="cc-number">CARD NUMBER</label>
+                <input type="tel" placeholder="e.g.1234 5678 9123 0000" class="innumber" maxlength="19"
+                    onkeypress="cardspace()" required oninput="number()">
+
+                <div class="label"><label for="exp-date" id="exp">EXP. DATE (MM/YY)</label><label for="cvc"
+                        id="cv-label">CVC</label>
+                </div>
+
+                <div class="date-cvc">
+                    <input type="tel" placeholder="MM" maxlength="2" class="date" id="month" oninput="cMonth()"
+                        required>
+
+                    <input type="tel" placeholder="YY" maxlength="2" class="date" id="year" oninput="cYear()" required>
+                    <input type="tel" placeholder="000" id="cvc" oninput="cVc()">
+                </div>
+                <button type="submit" onclick="ThankYou()" id="submitinfo">Confirm</button>
+            </form>
+
+            <div class="thankyou">
+                <img src="images/icon-complete.svg" alt="logo" id="complete">
+                <h2>THANK YOU!</h2>
+                <p>We've added your card details</p>
+                <button type="submit" id="continue" onclick="refresh()">Continue</button>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!--<script src="mobile-script.js"></script>-->
+</body>
+
+</html>
