@@ -282,7 +282,11 @@ button {
         margin-top: 260px;
         margin-left: 300px
     }
-
+    
+    .white{
+    height: 100vh
+    }
+    
     .thankyou{
         margin-top: 260px;
         margin-left: 300px
